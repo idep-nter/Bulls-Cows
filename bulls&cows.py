@@ -112,10 +112,10 @@ def save_results(n_of_guesses, length):
     minutes, seconds = divmod(sec, 60)
     seconds = round(seconds)
     if minutes >= 1:
-        entry = f'Number of guesses: {n_of_guesses} |, length: {minutes}m:' \
+        entry = f'Number of guesses: {n_of_guesses} | length: {minutes}m:' \
                 f'{seconds}s'
     else:
-        entry = f'Number of guesses: {n_of_guesses} |, length: {seconds}s'
+        entry = f'Number of guesses: {n_of_guesses} | length: {seconds}s'
     with open('results.txt', 'a') as f:
         f.write(entry)
         f.write('\n')
