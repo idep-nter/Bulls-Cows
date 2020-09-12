@@ -93,7 +93,7 @@ def result(n_of_guesses, length):
     """
     Evaluates result according to specified criteria and prints it.
     """
-    length_minutes = length.seconds // 60
+    length_minutes = length.total_seconds() // 60
     if n_of_guesses < 5 and length_minutes < 1:
         print(f'Correct, you\'ve guessed the right number in {n_of_guesses} '
               f'guesses and in {length}!\nThat\'s amazing!')
