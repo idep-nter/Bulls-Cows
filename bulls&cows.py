@@ -72,18 +72,14 @@ def compare(n, guess):
     """
     Compares both numbers and returns number of cows and bulls.
     """
-    cows = ''
-    bulls = ''
     result = {'cows' : 0, 'bulls' : 0}
     for i, num in enumerate(n):
         if num == guess[i]:
-            bulls += num
+            result['bulls'] += 1
         elif num in guess:
-            cows += num
+            result['cows'] += 1
         else:
             continue
-    result['cows'] = len(cows)
-    result['bulls'] = len(bulls)
     return result
 
 def check_if_over(bulls):
