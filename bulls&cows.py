@@ -29,10 +29,10 @@ def main():
         length = end - start
         evaluation = result(n_of_guesses, length)
         save = save_results(n_of_guesses, length)
-        q1 = input('Do you want to show history of previous games?')
+        q1 = input('Do you want to show history of previous games? y/n')
         if q1 == 'y':
             show_history = history()
-        q2 = input('Do you want to play again?')
+        q2 = input('Do you want to play again? y/n')
         if q2 == 'y':
             continue
         else:
