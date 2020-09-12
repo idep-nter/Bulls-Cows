@@ -1,4 +1,4 @@
-# Bulls-Cows
+# Bulls&Cows
 A game that generates 4 unique numbers and player tries to guess them.
 
 If he guesses right number and position he gets a bull, if he guesses just number he gets a cow.
