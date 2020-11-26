@@ -4,8 +4,8 @@ import datetime
 def main():
     """
     Prints an intro to the game, starts the game while clocking the time and
-    when it's over, it shows results and history of previous games if desired.
-    At last it asks user if he wants to repeat the game.
+    when it's over, it shows results and a history of previous games if desired.
+    At last it asks a user if he wants to repeat the game.
     """
     while True:
         print('Hi there!')
@@ -51,7 +51,7 @@ def gen_num():
 
 def num_guess():
     """
-    Checks user's input if all digits are unique and length is four.
+    Checks an user's input if all digits are unique and a length is four.
     """
     ok_guess = ''
     while len(ok_guess) != 4:
@@ -70,7 +70,7 @@ def num_guess():
 
 def compare(n, guess):
     """
-    Compares both numbers and returns number of cows and bulls.
+    Compares both numbers and returns a number of cows and bulls.
     """
     result = {'cows' : 0, 'bulls' : 0}
     for i, num in enumerate(n):
@@ -91,7 +91,7 @@ def check_if_over(bulls):
 
 def result(n_of_guesses, length):
     """
-    Evaluates result according to specified criteria and prints it.
+    Evaluates a result according to a specified criteria and prints it.
     """
     length_minutes = length.total_seconds() // 60
     if n_of_guesses < 5 and length_minutes < 1:
@@ -106,7 +106,7 @@ def result(n_of_guesses, length):
 
 def save_results(n_of_guesses, length):
     """
-    Saves the result of current game into file.
+    Saves the result of the current game into a file.
     """
     sec = length.total_seconds()
     minutes, seconds = divmod(sec, 60)
