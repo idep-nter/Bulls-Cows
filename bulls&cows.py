@@ -14,7 +14,6 @@ def main():
         n = gen_num()
         start = datetime.datetime.now()
         n_of_guesses = 0
-
         while True:
             n_of_guesses += 1
             guess = num_guess()
@@ -47,6 +46,7 @@ def gen_num():
         n = random.randint(0, 9)
         if str(n) not in num:
             num += str(n)
+            
     return num
 
 def num_guess():
@@ -66,6 +66,7 @@ def num_guess():
         if len(guess) != 4:
             print('Number must be 4 digits!')
             ok_guess = ''
+            
     return ok_guess
 
 def compare(n, guess):
@@ -80,6 +81,7 @@ def compare(n, guess):
             result['cows'] += 1
         else:
             continue
+            
     return result
 
 def check_if_over(bulls):
@@ -129,3 +131,6 @@ def history():
         print('\n')
         for line in f:
             print(line)
+            
+if _name_ == '_name_':
+    main()
