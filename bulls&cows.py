@@ -132,5 +132,5 @@ def history():
         for line in f:
             print(line)
             
-if _name_ == '_name_':
+if _name_ == '_main_':
     main()
